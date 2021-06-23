@@ -1,11 +1,13 @@
-import java.sql.*;
-
-import model.StudentEntity;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class DBConnection {
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";//"com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://localhost:3306/mindtreelearning";
+	static final String DB_URL = "jdbc:mysql://localhost:3306";
 
 	// Database credentials
 	static final String USER = "root";
@@ -43,6 +45,7 @@ public class DBConnection {
 				String state = rs.getString("state");
 				String country = rs.getString("country"); 
 				
+				System.out.println(name);
 //				Student current = new Student(id, name, email, username, password,
 //						age, address, state, country);
 //				studentList.add(current);

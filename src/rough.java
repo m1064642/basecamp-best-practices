@@ -74,6 +74,18 @@ public class rough {
 //		System.out.println(name + source + destination);
 		
 		//String 
+//		String num = "+91 8237132298";
+//		String trimed = num.substring(3);
+//		num = num.substring(3).trim();
+//		System.out.println(num+"\tsize->"+num.length());
+//		System.out.println(num.length()); //14
+//		System.out.println(trimed.length()); //11
+//		String str = trimed.trim();
+//		System.out.println(str+"\tsize->"+ str.length() );// 8237132298   size-> 10
+		
+		double n = 100.0/3;
+		
+		System.out.printf("%.2f",n);
 		
 	}
 
